@@ -5,8 +5,8 @@ This project follows a set code style across all of the projects. In general, we
 1. All files have a copyright statement at the top: 
     ```
     /*
-    * Copyright (c) {year} CascadeBot. All rights reserved.
-    * Licensed under the MIT license.
+     * Copyright (c) {year} CascadeBot. All rights reserved.
+     * Licensed under the MIT license.
      */
      ```
      If you use IntelliJ, you can [setup a copyright template](https://www.jetbrains.com/help/webstorm/generating-and-updating-copyright-notice.html) using the placeholder `$today.year` for the year. This will automatically preface new files with the right copyright notice.
