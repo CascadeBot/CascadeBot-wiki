@@ -14,7 +14,7 @@ Cascade Bot's repository structure is heavily based off of the [git-flow system]
 -------
 
 ### Master Branch
-This branch holds the latest production version of the bot. The production bot will be updated off of this branch exclusively. If any issues arise that need immediate attention, a [hotfix branch](#hotfix-branch) is created to address these issues.
+This branch holds the latest production version of the bot. The production bot will be updated off of this branch exclusively. If any issues arise that need immediate attention, a [hotfix branch](#hotfix-branches) is created to address these issues.
 
 ### Development Branch
 This branch is where all the non-production work for the bot happens. All other branches other than hotfix branches are to be based off and merged back into this branch. All Pull Requests need to be up to date with this branch otherwise they will be denied.
