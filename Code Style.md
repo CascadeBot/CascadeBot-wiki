@@ -1,5 +1,3 @@
-## Code style
-
 This project follows a set code style across all of the projects. In general, we adhere to the [Google code style for Java](https://google.github.io/styleguide/javaguide.html) but in some cases we have our own additions or modifications.
 
 1. All files have a copyright statement at the top: 

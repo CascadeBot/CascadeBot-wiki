@@ -1,5 +1,3 @@
-# Repository Structure
-
 Cascade Bot's repository structure is heavily based off of the [git-flow system](https://nvie.com/posts/a-successful-git-branching-model/).
 
 ## Branches
