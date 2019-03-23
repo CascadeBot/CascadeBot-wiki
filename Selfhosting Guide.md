@@ -24,7 +24,7 @@ The CascadeBot team uses Jenkins to automatically build our changes, and push th
 
 Of course, to run the CascadeBot JAR file you're going to need JDK 11 on your server. To install this, you're going to need to SSH into your server and run a few basic commands. 
 
-First of all, you're just going to want to run `sudo apt update` and `sudo apt upgrade` on your server.
+First of all, you're just going to want to run `sudo apt-get update` and `sudo apt-get upgrade` on your server.
 
 After this, you're going to need to run `sudo add-apt-repository ppa:linuxuprising/java` to add the PPA. Now, run `sudo apt-get install oracle-java11-installer` to get thee Java installer.
 
@@ -51,4 +51,24 @@ Next, you're going to need to add the MongoDB Atlas information. In this tutoria
 
 Comment out all of the other database options (username, password, database, hosts and ssl), and uncomment `connection_string`. Now we're going to head back over to the MongoDB Atlas page and get our connection string.
 
-Once there, click **Connect** in your Cluster's card, and then click **Connect your Application**
+Once there, click **Connect** in your Cluster's card, and then click **Connect your Application**. You will then be given a Connection String, which you can copy and paste into your configuration file. You'll need to replace `<password>` with your MongoDB password.
+
+You can either fill out the `official_server` option with "-1" or with your own server ID, depending on whether you want to use security roles (such as owners and moderators) or not. Filling out all of the role IDs is optional, but if you don't fill them in then nobody will be able to run the developer commands such as shutdown, eval and more.
+
+For the `global_emotes` option, you can either create your own emoji assets or just leave them blank. Leaving them blank is fine, and isn't really very noticeable when using the bot.
+
+You'll need to put two double quotes ("") in the `secret_key` section.
+
+Once you've done all of this, save the file and upload it to the same directory as the CascadeBot JAR file.
+
+#### Step 6 (The Final Step!)
+
+Congratulations for getting this far! You're now (in theory) ready to start up the bot and invite it to guilds. 
+
+SSH into your server and navigate to the directory in which you've been uploading the CascadeBot files. Once there, run `java -jar CascadeBot-jar-with-dependencies.jar` and your bot will boot up.
+
+To invite the bot to servers, use this link: `https://discordapp.com/oauth2/authorize?client_id=[REPLACE]&scope=bot&permissions=0` and replace the obvious text with your Client ID, found on the Discord Developer Portal.
+
+### Thanks for reading!
+
+If you need any extra support, please join the CascadeBot Official Discord at [INSERT LINK]. I hope you found this tutorial helpful!
