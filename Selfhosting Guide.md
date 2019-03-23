@@ -10,7 +10,8 @@ To host CascadeBot, you will need to have a MongoDB cluster for the bot to store
 
 We recommend that you use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) as it has a free tier option, which is good for a smaller instance to start out.
 
-Once you've created an account with MongoDB Atlas and navigated to your "dashboard", click on the **Build a New Cluster** button. For this tutorial, I will be using the Google Cloud Platform provider, and the Belgium region. Mine looks [like this](images/selfhosting/database1.png). There's no need to change any other settings or options at this point, so just go ahead and click **Create Cluster**. New clusters usually take 5-10 minutes to become ready, so don't worry if the process appears to have hanged.
+Once you've created an account with MongoDB Atlas and navigated to your "dashboard", click on the **Build a New Cluster** button. For this tutorial, I will be using the Google Cloud Platform provider, and the Belgium region. Mine looks like this: [[https://github.com/CascadeBot/CascadeBot-wiki/blob/master/images/selfhosting/database1.png|databaseconfigurator]]
+ There's no need to change any other settings or options at this point, so just go ahead and click **Create Cluster**. New clusters usually take 5-10 minutes to become ready, so don't worry if the process appears to have hanged.
 
 When the cluster has been created, select the **Security > IP Whitelist** tab and select **Add IP Address**. You're going to need the __External IP__ address of the Ubuntu server that you will be running your server on. Once you've got this, pop that IP into the "Whitelist Entry" box. You can enter a comment such as "Ubuntu Server" into the Comment box. Now you can go ahead and click confirm.
 
@@ -30,7 +31,7 @@ After this, you're going to need to run `sudo add-apt-repository ppa:linuxuprisi
 
 Once you've run the command to download the installer, a license agreement page will pop up. Press Tab to highlight the OK button, and hit Enter to accept it. I assume here that Java 11 is the only version of Java installed on your system.
 
-Give the system a second to finish the install, and then run `java -version`. If it looks something [like this](images/selfhosting/javaversion.png) then you're good.
+Give the system a second to finish the install, and then run `java -version`. If it looks something like this then you're good: [[https://github.com/CascadeBot/CascadeBot-wiki/blob/master/images/selfhosting/javaversion.png|javaversion]]
 
 #### Step 4 (Creating a Discord Bot user)
 
