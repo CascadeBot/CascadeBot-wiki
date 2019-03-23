@@ -22,7 +22,7 @@ The CascadeBot team uses Jenkins to automatically build our changes, and push th
 
 #### Step 3 (Installing Java)
 
-Of course, to run the CascadeBot JAR file you're going to need JDK 11 on your server. To install this, you're going to need to SSH into your server and run a few basic commands. 
+To run the CascadeBot JAR file you're going to need JDK 11 on your server. To install this, you're going to need to SSH into your server and run a few basic commands. 
 
 First of all, you're just going to want to run `sudo apt-get update` and `sudo apt-get upgrade` on your server.
 
