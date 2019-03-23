@@ -26,7 +26,7 @@ To run the CascadeBot JAR file you're going to need JDK 11 on your server. To in
 
 First of all, you're just going to want to run `sudo apt-get update` and `sudo apt-get upgrade` on your server.
 
-After this, you're going to need to run `sudo add-apt-repository ppa:linuxuprising/java` to add the PPA. Now, run `sudo apt-get install oracle-java11-installer` to get thee Java installer.
+After this, you're going to need to run `sudo add-apt-repository ppa:linuxuprising/java` to add the PPA. Now, run `sudo apt-get install oracle-java11-installer` to get the Java installer.
 
 Once you've run the command to download the installer, a license agreement page will pop up. Press Tab to highlight the OK button, and hit Enter to accept it. I assume here that Java 11 is the only version of Java installed on your system.
 
